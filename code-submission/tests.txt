@@ -1,0 +1,6 @@
+    if (merged->parent != NULL) {
+        merged->parent->head->prev = NULL;
+        if (sibling->prev == NULL) {
+            merged->parent->head = merged;
+        }
+    }
